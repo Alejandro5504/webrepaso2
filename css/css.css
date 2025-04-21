@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+html {
+
+    background-color: rgb(225, 244, 249);
+
+}
+
+.h1d2 {
+
+    background-color: brown;
+    color: rgb(255, 255, 255);
+
+}
+
+.sw {
+
+    color: rgb(84, 131, 187);
+
+}
+
+body>h1,
+h2,
+h3,
+p {
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    /* Oculta las viñetas estándar */
+}
+
+ul li::before {
+    content: "★ ";
+    /* Reemplaza la viñeta con un símbolo */
+    color: #f4a261;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+ul li:hover::before {
+    color: #2a9d8f;
+    /* Nuevo color cuando se pasa el ratón */
+}
+
+
+body>nav>a>button:hover {
+
+    height: 40px;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    border-top: solid 2px rgb(0, 0, 0);
+    border-left: solid 2px rgb(0, 0, 0);
+    border-bottom: solid 2px rgb(253, 3, 3);
+    border-right: solid 2px rgb(253, 3, 3);
+    margin-bottom: 15px;
+    margin-right: 5em;
+    background-color: rgb(220, 20, 60);
+
+}
+
+div {
+
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top: solid 5px rgb(0, 0, 0);
+    border-bottom: solid 5px rgb(0, 0, 0);
+    border-left: solid 5px rgb(0, 0, 0);
+    border-right: solid 5px rgb(0, 0, 0);
+    background-color: rgb(249, 249, 249);
+
+} 
+
+a[href^="tel"]::before {
+
+    content: url('../img/tel.png');
+
+}
+
+
+a[href^="mailto"]::after {
+    content: url('../img/mail.png');
+    /* Icono de correo */
+}
+
+
+a {
+
+  
+    color: rgba(0, 0, 0, 0.724);
+    text-decoration: none;
+} 
+
+a[href*=":"]::before {
+
+content: url('../img/EMO.png')
+
+}
+
+
+.a:hover {
+
+    font-size: 16px;
+
+    color: rgba(76, 22, 163, 0.724);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+.clase {
+
+    margin-left: 28em;
+
+}
